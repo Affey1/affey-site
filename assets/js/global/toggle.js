@@ -171,3 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
         poemDisplay.innerText = savedPoem;
     }
 });
+// Função para redirecionar e salvar a cor
+function redirectToSite() {
+    const currentColor = document.body.style.backgroundColor; // Obtém a cor atual
+    localStorage.setItem('corSelecionada', currentColor); // Salva a cor no localStorage
+    window.location.href = 'index1.html'; // Redireciona para o index.html
+}
