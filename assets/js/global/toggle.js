@@ -38,7 +38,6 @@ function changeBackgroundColorAndImage(position) {
     const index = markerPositions.indexOf(position);
     if (index !== -1) {
         const selectedColor = gradients[index];
-
         document.body.style.background = selectedColor; 
         document.querySelector('.nav-list').style.background = selectedColor;
         sliderImage.src = images[index];
@@ -46,12 +45,13 @@ function changeBackgroundColorAndImage(position) {
         // Exibe o poema correspondente
         const themes = ['inverno', 'outono', 'primavera', 'verao'];
         const selectedTheme = themes[index]; // Obtém o tema correspondente
-        mostrarPoema(selectedTheme);
+        mostrarPoema(selectedTheme); // Chama a função para mostrar o poema
 
         // Salva a cor selecionada no localStorage
         localStorage.setItem('corSelecionada', selectedColor);
     }
 }
+
 
 // Função para mostrar o poema na página
 function mostrarPoema(tema) {
