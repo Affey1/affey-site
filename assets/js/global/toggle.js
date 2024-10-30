@@ -175,5 +175,5 @@ document.addEventListener('DOMContentLoaded', () => {
 function redirectToSite() {
     const currentColor = document.body.style.backgroundColor; // Obtém a cor atual
     localStorage.setItem('corSelecionada', currentColor); // Salva a cor no localStorage
-    window.location.href = 'index1.html'; // Redireciona para o index.html
+    window.location.href = 'https://affey1.github.io/affey-site/index1.html'; // Redireciona para o index.html
 }
