@@ -176,6 +176,6 @@ function redirectToSite() {
     const rootStyle = getComputedStyle(document.body);
     const currentColor = rootStyle.getPropertyValue('--body-color') || document.body.style.backgroundColor; 
     localStorage.setItem('corSelecionada', currentColor); // Salva a cor no localStorage
-    window.location.href = 'https://affey1.github.io/affey-site/index1.html'; // Redireciona para o index.html
+    window.location.href = 'https://affey1.github.io/affeysite123/index1.html'; // Redireciona para o index.html
 }
 
